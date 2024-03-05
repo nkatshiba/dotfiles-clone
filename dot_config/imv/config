@@ -1,0 +1,7 @@
+[options]
+list_files_at_exit = true
+overlay = true
+overlay_font = FiraCode Nerd Font Mono:8
+overlay_text_color = #F4005D
+# overlay_text = "[$imv_current_index/$imv_file_count] $imv_current_file (echo 1) [$imv_width x $imv_height]"
+overlay_text = "[$imv_current_index/$imv_file_count]" "$imv_current_file"  "[$imv_width x $imv_height] <$imv_scaling_mode @ $imv_scale>"

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Terminal=false
+Type=Application
+Categories=Audio;
+Name=sonos-controller-unofficial
+Icon=appimagekit-sonos-controller-unofficial
+Exec=/home/tildavimer/src/scripts/alone/sonos_exec.fish %U

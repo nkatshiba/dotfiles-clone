@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $(ip a s | grep wg-mullvad | grep inet | awk '{print $2;}' | cut -d . -f2 | tr -d '\n' | wc -c) -eq 3 ]; then
+	echo "MLVD3D"
+else
+	echo "NO VPN"
+fi

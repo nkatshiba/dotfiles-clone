@@ -1,0 +1,8 @@
+# Nmap 7.94 scan initiated Mon Oct 16 05:25:32 2023 as: nmap --ttl 1 -sn --privileged -oG ./ne.txt 192.168.1.196/24
+Host: 192.168.1.1 ()	Status: Up
+Host: 192.168.1.108 ()	Status: Up
+Host: 192.168.1.117 ()	Status: Up
+Host: 192.168.1.133 ()	Status: Up
+Host: 192.168.1.162 ()	Status: Up
+Host: 192.168.1.196 ()	Status: Up
+# Nmap done at Mon Oct 16 05:25:39 2023 -- 256 IP addresses (6 hosts up) scanned in 7.34 seconds

@@ -1,0 +1,3 @@
+[OWNIT] ownit.fish
+[HBO] hbo.fish
+[POKER] poker.fish

@@ -1,0 +1,471 @@
+@import "css/colors.css";
+
+* {
+  font-family: "FiraCode Nerd Font Mono SemBd", bold;
+  font-size: 12px;
+}
+
+window#waybar {
+  background-color: @bg;
+}
+
+#workspaces button {
+  background-color: @pink;
+  color: @fg;
+  padding: 0px 0px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 3px;
+  transition-property: color;
+  transition-duration: 2s;
+  opacity: 0.8;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  background: @yellow;
+  border: @fg;
+  padding: 1px 1px 1px 1px;
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+  background-color: @teal;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  opacity: 1.0;
+}
+
+#workspaces button.urgent {
+  background-color: @pink;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+/* #workspaces button.hidden {} */
+
+/* -------------------------------------------------------------------------------- */
+
+#custom-launcher,
+#window,
+#tray,
+#cpu,
+#memory,
+#backlight,
+#pulseaudio.audio,
+#pulseaudio.microphone,
+#network,
+#bluetooth,
+#battery,
+#clock,
+#disk,
+#idle_inhibator,
+#custom-vpn_check,
+#custom-weather,
+#mpris,
+#custom-powermenu {
+  color: @text;
+  padding: 1px 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 3px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#window {
+  color: @crust;
+  background-image: linear-gradient(75deg, #06D6A0 10%, @yellow 35%, @pink 70%, #FCB5AB 90%);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#custom-launcher {
+  background-color: @blue;
+  color: @crust;
+}
+
+#custom-launcher:hover {
+  background-color: @sky;
+}
+
+#custom-powermenu {
+  background-color: @red;
+  color: @crust;
+}
+
+#custom-powermenu:hover {
+  background-color: @maroon;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces,
+.modules-left > widget:first-child > #custom-launcher,
+.modules-left > widget:first-child > #window,
+.modules-left > widget:first-child > #tray,
+.modules-left > widget:first-child > #cpu,
+.modules-left > widget:first-child > #memory,
+.modules-left > widget:first-child > #backlight,
+.modules-left > widget:first-child > #pulseaudio.audio,
+.modules-left > widget:first-child > #pulseaudio.microphone,
+.modules-left > widget:first-child > #network,
+.modules-left > widget:first-child > #bluetooth,
+.modules-left > widget:first-child > #battery,
+.modules-left > widget:first-child > #clock,
+.modules-left > widget:first-child > #custom-powermenu {
+  margin-left: 0px;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces,
+.modules-right > widget:last-child > #custom-launcher,
+.modules-right > widget:last-child > #window,
+.modules-right > widget:last-child > #tray,
+.modules-right > widget:last-child > #cpu,
+.modules-right > widget:last-child > #memory,
+.modules-right > widget:last-child > #backlight,
+.modules-right > widget:last-child > #pulseaudio.audio,
+.modules-right > widget:last-child > #pulseaudio.microphone,
+.modules-right > widget:last-child > #network,
+.modules-right > widget:last-child > #bluetooth,
+.modules-right > widget:last-child > #battery,
+.modules-right > widget:last-child > #clock,
+.modules-right > widget:last-child > #mpris,
+.modules-right > widget:last-child > #custom-powermenu {
+  margin-right: 5px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#tray {
+  background-color: transparent;
+  opacity: 0.3;
+}
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: @red;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#cpu {
+  color: @yellow;
+  opacity: 0.7;
+  padding-left: 90px;
+}
+
+#cpu:hover {
+  background-color: @teal;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#disk {
+  color: @pink;
+  opacity: 0.7;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+#disk:hover {
+  background-color: @teal;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#memory {
+  color: @lightblue;
+  opacity: 0.7;
+  padding-left: 30px;
+}
+
+#memory:hover {
+  background-color: @teal;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#backlight {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 240px;
+  border-radius: 0px;
+  transition: none;
+  color: @peach;
+  opacity: 0.5;
+}
+
+#backlight:hover {
+  background-color: @rosewater;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#pulseaudio.audio {
+  color: @teal;
+  padding-right: 10px;
+
+}
+
+#pulseaudio.audio:hover {
+  background-color: @pink;
+}
+
+#pulseaudio.audio.bluetooth {
+  background-color: @teal;
+  color: @fg;
+}
+
+#pulseaudio.bluetooth:hover {
+  background-color: @purple;
+}
+
+#pulseaudio.audio.muted {
+  color: @red;
+  opacity: 0.7;
+}
+
+#pulseaudio.audio.muted:hover {
+  background-color: @maroon;
+}
+
+#pulseaudio.microphone {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: 90px;
+
+  background-color: @teal;
+  color: @fg;
+}
+
+#pulseaudio.microphone:hover {
+  background-color: @pink;
+}
+
+#pulseaudio.microphone.source-muted {
+  background-color: @red;
+  opacity: 0.7;
+}
+
+#pulseaudio.microphone.source-muted:hover {
+  background-color: @maroon;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#network,
+#network.ethernet,
+#network.wifi {
+  padding-left: 160px;
+  color: @lightpink;
+  opacity: 0.5;
+}
+
+#network:hover,
+#network.ethernet:hover,
+#network.wifi:hover {
+  background-color: @teal;
+}
+
+#network.disabled,
+#network.disconnected {
+  background-color: @red;
+  color: @crust;
+}
+
+#network.disabled:hover,
+#network.disconnected:hover {
+  background-color: @maroon;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#bluetooth {
+  margin-top: 2px;
+  margin-bottom: 2px;
+
+
+}
+#bluetooth.disabled,
+#bluetooth.off {
+  background-color: @red;
+  color: @crust;
+}
+
+#bluetooth.disabled:hover,
+#bluetooth.off:hover {
+  background-color: @maroon;
+}
+
+#bluetooth.on {
+  background-color: @blue;
+  color: @white;
+  opacity: 0.6;
+}
+
+#bluetooth.connected {
+  background-color: @blue;
+  color: @white;
+}
+
+#bluetooth.on:hover,
+#bluetooth.connected:hover {
+  opacity: 0.8;
+}
+
+/* #bluetooth.discoverable {} */
+/* #bluetooth.discovering {} */
+/* #bluetooth.pairable {} */
+
+/* -------------------------------------------------------------------------------- */
+
+#battery {
+  padding-right: 160px;
+  transition: none;
+}
+#battery.full {
+  color: lightgrey;
+  opacity: 0.5;
+}
+
+#battery.full:hover {
+  /* background-color: @teal; */
+}
+
+#battery.warning {
+  color: lightgrey;
+  background-color: @bg;
+
+}
+
+#battery.warning:hover {
+  background-color: @rosewater;
+}
+
+#battery.critical {
+  /* background-color: @red; */
+  color: lightgrey;
+}
+
+#battery.critical:hover {
+  /* background-color: @maroon; */
+}
+
+#battery.charging,
+#battery.plugged {
+  color: lightgrey;
+  opacity: 0.5;
+}
+
+#battery.charging:hover,
+#battery.plugged:hover {
+}
+
+/* -------------------------------------------------------------------------------- */
+#mpris {
+	margin-top: 0px;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-left: 0px;
+	margin-bottom: 0px;
+	padding-right: 0px;
+	border-radius: 0px;
+	transition: none;
+	color: @teal;
+  background-color: @transparent;
+  font-size: 12px;
+}
+
+#mpris.paused {
+    opacity: 0.6
+}
+/* -------------------------------------------------------------------------------- */
+
+#clock {
+  color: @yellow;
+;
+  /* color: @rosewater; */
+}
+
+#clock:hover {
+  background-color: @text;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#custom-vpn_check {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 5px;
+  padding-left: 0px;
+  padding-right: 5px;
+  border-radius: 0px;
+  transition: none;
+
+  color: @teal;
+  opacity: 0.7;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#idle_inhibitor {
+    color: @flamingo;
+    padding: 1px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-right: 30px;
+    border-radius: 5px;
+}
+#idle_inhibitor.activated {
+    /* background-color: @green; */
+  color: @lightpink;
+  opacity: 0.7;
+;
+}
+
+#idle_inhibitor.deactivated {
+    color: @lightorange;
+    opacity: 0.5;
+}
+/* -------------------------------------------------------------------------------- */
+#custom-weather {
+  color: @purple;
+  opacity: 0.9;
+  padding-right: 30px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#submap {
+  font-size: 14px;
+  background-color: @yellow;
+  color: @lightpink;
+
+  /* background-color: @lightpink; */
+  /* color: @yellow; */
+  margin-left: 120px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 3px;
+  /* transition-property: color; */
+  /* transition-duration: 2s; */
+  /* opacity: 0.8; */
+}
+
+  /* border-bottom: 6px solid transparent; */

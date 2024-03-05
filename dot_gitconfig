@@ -1,0 +1,19 @@
+[user]
+	name = nkatshiba
+	email = nkatshiba@proton.me
+[credential]
+	helper = cache
+[init]
+	defaultBranch = main
+[pack]
+	threads = 1
+[diff]
+        tool = difftastic
+[difftool]
+        prompt = false
+[difftool "difftastic"]
+        cmd = difft "$LOCAL" "$REMOTE"
+[pager]
+        difftool = true
+[core]
+	autocrlf = false

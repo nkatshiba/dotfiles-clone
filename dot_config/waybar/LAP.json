@@ -1,0 +1,20 @@
+{
+  // Modules left
+  "modules-left": [
+    "clock#clock2",
+    "battery",
+    "backlight"
+
+  ],
+
+  // Modules center
+  "modules-center": [
+    "hyprland/workspaces"
+   ],
+
+  // Modules right
+  "modules-right": [
+    "pulseaudio#audio",
+    "pulseaudio#microphone"
+  ],
+}

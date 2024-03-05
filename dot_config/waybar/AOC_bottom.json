@@ -1,0 +1,16 @@
+{
+  // Modules left
+  "modules-left": [
+    // "mpris",
+    "hyprland/submap"
+  ],
+
+  // Modules center
+  "modules-center": [
+    "clock#clock2",
+   ],
+
+  // Modules right
+  "modules-right": [
+  ],
+}

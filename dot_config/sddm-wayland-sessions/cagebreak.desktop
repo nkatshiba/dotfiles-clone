@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=CageBreak
+Comment=An i3-compatible Wayland compositor
+Exec=cagebreak
+Type=Application

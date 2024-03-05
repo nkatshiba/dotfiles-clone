@@ -1,0 +1,129 @@
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable selector-id-pattern */
+$primary: #ededf2;
+$secondary: #a7a7be;
+$tertiary: #8a8aa8;
+$accent: #8686f2;
+$bg: #2b2b3b;
+$bg-a: #16161d;
+$bs: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+
+#vimiumHintMarkerContainer div {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", sans-serif;
+
+  &.internalVimiumHintMarker,
+  &.vimiumHintMarker {
+    padding: 4px 5px 2px;
+    background: $bg;
+    border: none;
+    box-shadow: $bs;
+  }
+
+  span {
+    color: $primary;
+    font-size: 12px;
+    text-shadow: none;
+  }
+
+  > .matchingCharacter {
+    opacity: 0.8;
+
+    ~ span {
+      color: $accent;
+    }
+  }
+}
+
+#vomnibar {
+  background: $bg;
+  border: none;
+  box-shadow: $bs;
+
+  .vomnibarSearchArea,
+  input {
+    color: $primary;
+    background: transparent;
+    border: none;
+  }
+
+  .vomnibarSearchArea {
+    padding: 12px 16px;
+  }
+
+  input {
+    padding: 16px 8px;
+    outline: $bg solid 1px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    background: $bg;
+    border-top: 1px solid $bg-a;
+  }
+
+  li {
+    padding: 12px 24px;
+    border-bottom: 1px solid $bg-a;
+
+    .vomnibarTopHalf,
+    .vomnibarBottomHalf {
+      padding: 3px 0;
+    }
+
+    .vomnibarSource {
+      color: $secondary;
+    }
+
+    em,
+    .vomnibarTitle {
+      color: $secondary;
+    }
+
+    .vomnibarUrl {
+      color: $tertiary;
+    }
+
+    .vomnibarMatch {
+      color: $accent;
+      font-weight: normal;
+    }
+
+    .vomnibarTitle .vomnibarMatch {
+      color: $accent;
+    }
+
+    &.vomnibarSelected {
+      background-color: $bg-a;
+    }
+
+    .vomnibarNoInsertText {
+      display: none;
+    }
+
+    &:last-of-type {
+      padding-bottom: 16px;
+    }
+  }
+}
+
+div.vimiumHUD {
+  background: $bg;
+  border: none;
+  box-shadow: $bs;
+
+  span#hud-find-input,
+  .vimiumHUDSearchAreaInner {
+    color: $primary;
+  }
+
+  .hud-find {
+    background-color: transparent;
+    border: none;
+  }
+
+  .vimiumHUDSearchArea {
+    background-color: transparent;
+  }
+}

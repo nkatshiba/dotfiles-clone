@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Skiff-Mail
+Comment=Skiff mail nativefier
+Exec=hyprctl dispatch exec $HOME/.local/nativefier/skiff-mail-linux-x64/skiff-mail -- --enable-features=UseOzonePlatform --ozone-platform=wayland
+Terminal=false
+Type=Application
+# Icon=io.element.Element
+StartupWMClass=Skiff
+# Categories=Network;InstantMessaging;Chat;IRCClient
+# MimeType=x-scheme-handler/element;
+

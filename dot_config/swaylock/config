@@ -1,0 +1,53 @@
+# indicator
+# no-unlock-indicator
+# daemonize
+# datestr=%A
+
+#########################################################
+# image=/home/xshiba/Pictures/wps/nowa/pf/arch_prism.jpg
+# image=/home/xshiba/Pictures/wps/nowa/pf/space.jpg
+# image=/home/xshiba/Pictures/wps/nowa/pf/wywh.jpg
+# image=/home/xshiba/Pictures/wps/nowa/unitree.jpg
+# image=/home/xshiba/Pictures/wps/nowa/pf/cols.jpeg
+# image=/home/xshiba/Pictures/wps/nowa/pf/cola.jpg
+# image=/home/xshiba/Pictures/wps/nowa/darkuni.jpg
+#########################################################
+# image=/home/xshiba/Pictures/wps/nowa/yemoon.jpg
+# image=/home/xshiba/Pictures/wps/nowa/pf/machine.jpg
+# image=/home/xshiba/Pictures/wps/nowa/pf/prism1.jpg
+# image=/home/xshiba/Pictures/wps/nowa/pf/ipadce.jpg
+# image=/home/tildavimer/.config/swaylock/swaylock_bg.jpg
+image=/home/tildavimer/.config/swaylock/hypnotoad.jpg
+
+
+indicator-caps-lock
+scaling=fill
+font=CaskaydiaCove Nerd Font Mono
+font-size=20
+
+# Ring
+indicator-radius=60
+
+# Colors
+### Normal
+text-color=#023E8B
+inside-color=#000000
+line-color=#000000
+ring-color=#000000
+key-hl-color=#BC3253
+separator-color=#D4D4D4
+
+### Verifying
+text-ver-color=#CBB400
+inside-ver-color=#000000
+line-ver-color=#000000
+ring-ver-color=#000000
+
+### Wrong
+text-wrong-color=#023E8B
+inside-wrong-color=#000000
+line-wrong-color=#000000
+ring-wrong-color=#000000
+
+# Nothing
+layout-text-color=#000000

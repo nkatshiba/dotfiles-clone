@@ -1,0 +1,238 @@
+ckb-next 0.6.0
+Using "AMD" "AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.54, 6.5.2-arch1-1)"
+QObject::startTimer: Timers cannot have negative intervals
+Path to settings: "/home/tildavimer/.config/ckb-next/ckb-next.conf"
+Looking for old settings in: "/home/tildavimer/.config/ckb/ckb.conf"
+Backing up settings to "/home/tildavimer/.config/ckb-next/ckb-next_backup_1694710160.conf"
+2 keys backed up.
+Scanning "/usr/lib/ckb-next-animations/gradient"
+Scanning "/usr/lib/ckb-next-animations/heat"
+Scanning "/usr/lib/ckb-next-animations/invaders"
+Scanning "/usr/lib/ckb-next-animations/life"
+Scanning "/usr/lib/ckb-next-animations/mviz"
+Scanning "/usr/lib/ckb-next-animations/pinwheel"
+Scanning "/usr/lib/ckb-next-animations/pipe"
+Scanning "/usr/lib/ckb-next-animations/rain"
+Scanning "/usr/lib/ckb-next-animations/random"
+Scanning "/usr/lib/ckb-next-animations/ripple"
+Scanning "/usr/lib/ckb-next-animations/snake"
+Scanning "/usr/lib/ckb-next-animations/wave"
+qt.qpa.wayland: Wayland does not support QWindow::requestActivate()
+ckb-next is already running. Exiting.
+qt.qpa.wayland: Wayland does not support QWindow::requestActivate()
+QFont::setPixelSize: Pixel size <= 0 (0)
+Starting "/usr/lib/ckb-next-animations/wave"
+Creating PulseAudio context
+ckb-next is already running. Exiting.
+qt.qpa.wayland: Wayland does not support QWindow::requestActivate()
+qt.qpa.wayland: Wayland does not support QWindow::requestActivate()
+Disconnecting from X
+XCB EWMH Thread Quitting...
+wl_display@1: error 0: invalid object 19
+The Wayland connection experienced a fatal error: Invalid argument
+ckb-next 0.6.0
+Using "AMD" "AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.54, 6.5.2-arch1-1)"
+QObject::startTimer: Timers cannot have negative intervals
+Path to settings: "/home/tildavimer/.config/ckb-next/ckb-next.conf"
+Scanning "/usr/lib/ckb-next-animations/gradient"
+Scanning "/usr/lib/ckb-next-animations/heat"
+Scanning "/usr/lib/ckb-next-animations/invaders"
+Scanning "/usr/lib/ckb-next-animations/life"
+Scanning "/usr/lib/ckb-next-animations/mviz"
+Scanning "/usr/lib/ckb-next-animations/pinwheel"
+Scanning "/usr/lib/ckb-next-animations/pipe"
+Scanning "/usr/lib/ckb-next-animations/rain"
+Scanning "/usr/lib/ckb-next-animations/random"
+Scanning "/usr/lib/ckb-next-animations/ripple"
+Scanning "/usr/lib/ckb-next-animations/snake"
+Scanning "/usr/lib/ckb-next-animations/wave"
+QFont::setPixelSize: Pixel size <= 0 (0)
+Starting "/usr/lib/ckb-next-animations/wave"
+Creating PulseAudio context
+Importing "x"
+Starting "/usr/lib/ckb-next-animations/gradient"
+Starting "/usr/lib/ckb-next-animations/wave"
+Starting "/usr/lib/ckb-next-animations/random"
+Starting "/usr/lib/ckb-next-animations/gradient"
+Starting "/usr/lib/ckb-next-animations/wave"
+Starting "/usr/lib/ckb-next-animations/gradient"
+Starting "/usr/lib/ckb-next-animations/wave"
+Starting "/usr/lib/ckb-next-animations/gradient"
+Notify thread returning. Read 0 isOpen() true
+Disconnected from PulseAudio 6
+Disconnecting from X
+XCB EWMH Thread Quitting...
+ckb-next 0.6.0
+Using "AMD" "AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.54, 6.5.2-arch1-1)"
+QObject::startTimer: Timers cannot have negative intervals
+Path to settings: "/home/tildavimer/.config/ckb-next/ckb-next.conf"
+Scanning "/usr/lib/ckb-next-animations/gradient"
+Scanning "/usr/lib/ckb-next-animations/heat"
+Scanning "/usr/lib/ckb-next-animations/invaders"
+Scanning "/usr/lib/ckb-next-animations/life"
+Scanning "/usr/lib/ckb-next-animations/mviz"
+Scanning "/usr/lib/ckb-next-animations/pinwheel"
+Scanning "/usr/lib/ckb-next-animations/pipe"
+Scanning "/usr/lib/ckb-next-animations/rain"
+Scanning "/usr/lib/ckb-next-animations/random"
+Scanning "/usr/lib/ckb-next-animations/ripple"
+Scanning "/usr/lib/ckb-next-animations/snake"
+Scanning "/usr/lib/ckb-next-animations/wave"
+QFont::setPixelSize: Pixel size <= 0 (0)
+Starting "/usr/lib/ckb-next-animations/gradient"
+Creating PulseAudio context
+qt.qpa.wayland: Wayland does not support QWindow::requestActivate()
+"Object does not exist at path “/org/freedesktop/NetworkManager/ActiveConnection/3”"
+"Object does not exist at path “/org/freedesktop/NetworkManager/ActiveConnection/3”"
+Downloaded new firmware list. 39 entries found.
+
+Signal 15 caught. Quitting...
+The Wayland connection broke. Did the Wayland compositor die?
+ckb-next 0.6.0
+Using "AMD" "AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.54, 6.5.2-arch1-1)"
+QObject::startTimer: Timers cannot have negative intervals
+Path to settings: "/home/tildavimer/.config/ckb-next/ckb-next.conf"
+Scanning "/usr/lib/ckb-next-animations/gradient"
+Scanning "/usr/lib/ckb-next-animations/heat"
+Scanning "/usr/lib/ckb-next-animations/invaders"
+Scanning "/usr/lib/ckb-next-animations/life"
+Scanning "/usr/lib/ckb-next-animations/mviz"
+Scanning "/usr/lib/ckb-next-animations/pinwheel"
+Scanning "/usr/lib/ckb-next-animations/pipe"
+Scanning "/usr/lib/ckb-next-animations/rain"
+Scanning "/usr/lib/ckb-next-animations/random"
+Scanning "/usr/lib/ckb-next-animations/ripple"
+Scanning "/usr/lib/ckb-next-animations/snake"
+Scanning "/usr/lib/ckb-next-animations/wave"
+QFont::setPixelSize: Pixel size <= 0 (0)
+Starting "/usr/lib/ckb-next-animations/gradient"
+Creating PulseAudio context
+Downloaded new firmware list. 39 entries found.
+qt.qpa.wayland: Wayland does not support QWindow::requestActivate()
+QOpenGLVertexArrayObject::destroy() failed to restore current context
+QOpenGLVertexArrayObject::destroy() failed to restore current context
+"Object does not exist at path “/org/freedesktop/NetworkManager/ActiveConnection/3”"
+"Object does not exist at path “/org/freedesktop/NetworkManager/ActiveConnection/3”"
+
+Signal 15 caught. Quitting...
+The Wayland connection broke. Did the Wayland compositor die?
+ckb-next 0.6.0
+Using "AMD" "AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.54, 6.5.2-arch1-1)"
+QObject::startTimer: Timers cannot have negative intervals
+Path to settings: "/home/tildavimer/.config/ckb-next/ckb-next.conf"
+Scanning "/usr/lib/ckb-next-animations/gradient"
+Scanning "/usr/lib/ckb-next-animations/heat"
+Scanning "/usr/lib/ckb-next-animations/invaders"
+Scanning "/usr/lib/ckb-next-animations/life"
+Scanning "/usr/lib/ckb-next-animations/mviz"
+Scanning "/usr/lib/ckb-next-animations/pinwheel"
+Scanning "/usr/lib/ckb-next-animations/pipe"
+Scanning "/usr/lib/ckb-next-animations/rain"
+Scanning "/usr/lib/ckb-next-animations/random"
+Scanning "/usr/lib/ckb-next-animations/ripple"
+Scanning "/usr/lib/ckb-next-animations/snake"
+Scanning "/usr/lib/ckb-next-animations/wave"
+QFont::setPixelSize: Pixel size <= 0 (0)
+Starting "/usr/lib/ckb-next-animations/gradient"
+Creating PulseAudio context
+Downloaded new firmware list. 39 entries found.
+
+Signal 15 caught. Quitting...
+The Wayland connection broke. Did the Wayland compositor die?
+ckb-next 0.6.0
+Using "AMD" "AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.49, 6.1.53-1-lts)"
+QObject::startTimer: Timers cannot have negative intervals
+Path to settings: "/home/tildavimer/.config/ckb-next/ckb-next.conf"
+Scanning "/usr/lib/ckb-next-animations/gradient"
+Scanning "/usr/lib/ckb-next-animations/heat"
+Scanning "/usr/lib/ckb-next-animations/invaders"
+Scanning "/usr/lib/ckb-next-animations/life"
+Scanning "/usr/lib/ckb-next-animations/mviz"
+Scanning "/usr/lib/ckb-next-animations/pinwheel"
+Scanning "/usr/lib/ckb-next-animations/pipe"
+Scanning "/usr/lib/ckb-next-animations/rain"
+Scanning "/usr/lib/ckb-next-animations/random"
+Scanning "/usr/lib/ckb-next-animations/ripple"
+Scanning "/usr/lib/ckb-next-animations/snake"
+Scanning "/usr/lib/ckb-next-animations/wave"
+QFont::setPixelSize: Pixel size <= 0 (0)
+Starting "/usr/lib/ckb-next-animations/gradient"
+Creating PulseAudio context
+Downloaded new firmware list. 39 entries found.
+
+Signal 15 caught. Quitting...
+The Wayland connection broke. Did the Wayland compositor die?
+ckb-next 0.6.0
+ckb-next 0.6.0
+wl_display@1: error 0: invalid object 19
+ckb-next 0.6.0
+Using "AMD" "AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.49, 6.1.54-1-lts)"
+QObject::startTimer: Timers cannot have negative intervals
+Path to settings: "/home/tildavimer/.config/ckb-next/ckb-next.conf"
+Scanning "/usr/lib/ckb-next-animations/gradient"
+Scanning "/usr/lib/ckb-next-animations/heat"
+Scanning "/usr/lib/ckb-next-animations/invaders"
+Scanning "/usr/lib/ckb-next-animations/life"
+Scanning "/usr/lib/ckb-next-animations/mviz"
+Scanning "/usr/lib/ckb-next-animations/pinwheel"
+Scanning "/usr/lib/ckb-next-animations/pipe"
+Scanning "/usr/lib/ckb-next-animations/rain"
+Scanning "/usr/lib/ckb-next-animations/random"
+Scanning "/usr/lib/ckb-next-animations/ripple"
+Scanning "/usr/lib/ckb-next-animations/snake"
+Scanning "/usr/lib/ckb-next-animations/wave"
+QFont::setPixelSize: Pixel size <= 0 (0)
+Starting "/usr/lib/ckb-next-animations/gradient"
+Creating PulseAudio context
+"Object does not exist at path “/org/freedesktop/NetworkManager/ActiveConnection/3”"
+wl_display@1: error 0: invalid object 19
+The Wayland connection experienced a fatal error: Invalid argument
+The Wayland connection experienced a fatal error: Invalid argument
+ckb-next 0.6.0
+Using "AMD" "AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.49, 6.1.54-1-lts)"
+QObject::startTimer: Timers cannot have negative intervals
+Path to settings: "/home/tildavimer/.config/ckb-next/ckb-next.conf"
+Scanning "/usr/lib/ckb-next-animations/gradient"
+Scanning "/usr/lib/ckb-next-animations/heat"
+Scanning "/usr/lib/ckb-next-animations/invaders"
+Scanning "/usr/lib/ckb-next-animations/life"
+Scanning "/usr/lib/ckb-next-animations/mviz"
+Scanning "/usr/lib/ckb-next-animations/pinwheel"
+Scanning "/usr/lib/ckb-next-animations/pipe"
+Scanning "/usr/lib/ckb-next-animations/rain"
+Scanning "/usr/lib/ckb-next-animations/random"
+Scanning "/usr/lib/ckb-next-animations/ripple"
+Scanning "/usr/lib/ckb-next-animations/snake"
+Scanning "/usr/lib/ckb-next-animations/wave"
+QFont::setPixelSize: Pixel size <= 0 (0)
+Starting "/usr/lib/ckb-next-animations/gradient"
+Creating PulseAudio context
+Disconnecting from X
+XCB EWMH Thread Quitting...
+
+Signal 15 caught. Quitting...
+The Wayland connection broke. Did the Wayland compositor die?
+ckb-next 0.6.0
+Using "AMD" "AMD Radeon Graphics (rembrandt, LLVM 16.0.6, DRM 3.49, 6.1.54-1-lts)"
+QObject::startTimer: Timers cannot have negative intervals
+Path to settings: "/home/tildavimer/.config/ckb-next/ckb-next.conf"
+Scanning "/usr/lib/ckb-next-animations/gradient"
+Scanning "/usr/lib/ckb-next-animations/heat"
+Scanning "/usr/lib/ckb-next-animations/invaders"
+Scanning "/usr/lib/ckb-next-animations/life"
+Scanning "/usr/lib/ckb-next-animations/mviz"
+Scanning "/usr/lib/ckb-next-animations/pinwheel"
+Scanning "/usr/lib/ckb-next-animations/pipe"
+Scanning "/usr/lib/ckb-next-animations/rain"
+Scanning "/usr/lib/ckb-next-animations/random"
+Scanning "/usr/lib/ckb-next-animations/ripple"
+Scanning "/usr/lib/ckb-next-animations/snake"
+Scanning "/usr/lib/ckb-next-animations/wave"
+QFont::setPixelSize: Pixel size <= 0 (0)
+Starting "/usr/lib/ckb-next-animations/gradient"
+Creating PulseAudio context
+wl_display@1: error 0: invalid object 19
+The Wayland connection experienced a fatal error: Invalid argument
+The Wayland connection experienced a fatal error: Invalid argument
+ckb-next 0.6.0
+ckb-next is already running. Exiting.

@@ -1,0 +1,15 @@
+#!/bin/fish
+
+# echo "open -t https://www.dict.cc/?s=$QUTE_SELECTED_TEXT" >> "$QUTE_FIFO"
+# echo "cmd-set-text :$QUTE_URL" >> "$QUTE_FIFO"
+
+# echo $QUTE_URL
+# echo $QUTE_CURRENT_URL
+
+# echo "$QUTE_URL"
+# echo "$QUTE_CURRENT_URL"
+
+set current_url $argv[1]
+set next_page (string replace -r -- "page=[0-9]+" "page=81" $current_url)
+
+echo "open -t $next_page" >> "$QUTE_FIFO"

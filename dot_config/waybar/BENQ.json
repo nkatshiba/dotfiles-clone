@@ -1,0 +1,19 @@
+{
+  // Modules left
+  "modules-left": [
+    "tray"
+  ],
+
+  // Modules center
+  "modules-center": [
+    "hyprland/workspaces"
+   ],
+
+  // Modules right
+  "modules-right": [
+    "custom/weather",
+    "backlight",
+    "custom/vpn_check",
+    "idle_inhibitor"
+  ],
+}

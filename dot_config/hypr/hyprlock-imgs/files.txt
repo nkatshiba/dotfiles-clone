@@ -1,0 +1,1 @@
+$HOME/.config/hypr/hyprlock-imgs/nebula_bw.png >wlc

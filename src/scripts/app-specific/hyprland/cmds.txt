@@ -1,0 +1,11 @@
+/home/tildavimer/.config/hypr/conf.d/binds.conf
+/home/tildavimer/.config/hypr/conf.d/workspace.conf
+/home/tildavimer/.config/hypr/conf.d/monitor.conf
+/home/tildavimer/.config/hypr/conf.d/windowrules.conf
+-- UX
+/home/tildavimer/.config/hypr/conf.d/misc.conf
+/home/tildavimer/.config/hypr/conf.d/decoration.conf
+/home/tildavimer/.config/hypr/conf.d/layout.conf
+-- Backend
+/home/tildavimer/.config/hypr/conf.d/startup.conf
+/home/tildavimer/.config/hypr/conf.d/input.conf

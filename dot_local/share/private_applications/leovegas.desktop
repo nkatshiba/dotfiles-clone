@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=LeoVegas
+Comment=LeoVegas Betting
+Exec=/home/tildavimer/src/scripts/alone/leovegas.fish
+Icon=~/Pictures/icons/png-clipart-leovegas-online-casino-gambling-sports-betting-business-game-people-thumbnail.png
+Terminal=false
+StartupNotify=true
+Categories=Network;WebBrowser;
+

@@ -1,0 +1,341 @@
+#fb4099
+
+# GLOBAL
+max-history=100
+sort=-time
+
+# BINDING OPTIONS
+on-button-left=dismiss
+on-button-middle=none
+on-button-right=dismiss-all
+on-touch=dismiss
+#on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
+
+# STYLE OPTIONS
+# font=Fantasque Sans Mono 14
+font=FiraCode Nerd Font Mono SemBd 10
+width=300
+height=100
+margin=5
+padding=15
+border-size=2
+border-radius=2
+icons=1
+max-icon-size=48
+icon-location=left
+markup=1
+actions=1
+history=1
+text-alignment=center
+default-timeout=5000
+ignore-timeout=0
+max-visible=5
+layer=overlay
+anchor=top-right
+background-color=#020202
+text-color=#d9e0ee
+# border-color=#313244
+border-color=#d9e0ee
+progress-color=over #f4005f
+
+[urgency=low]
+# border-color=#313244
+border-color=#d9e0ee
+default-timeout=2000
+
+[urgency=normal]
+# border-color=#313244
+border-color=#d9e0ee
+default-timeout=5000
+
+[urgency=high]
+border-color=#f38ba8
+text-color=#f38ba8
+default-timeout=0
+anchor=center
+
+# anchor=position
+#######################################
+# top-right
+# top-center
+# top-left
+# bottom-right
+# bottom-center
+# bottom-left
+# center-right
+# center-left
+# center
+#######################################
+
+[category=mpd]
+border-color=#f9e2af
+default-timeout=2000
+group-by=category
+
+[category=clock]
+border-color=#f4005f
+default-timeout=10000
+group-by=category
+anchor=top-center
+width=150
+height=40
+margin=1
+padding=5
+
+[category=layout]
+anchor=bottom-center
+width=200
+height=200
+margin=1
+padding=2
+icons=0
+font=FiraCode Nerd Font Mono SemBd 10
+border-color=#f4005f
+default-timeout=10000
+group-by=category
+
+[category=wlp]
+anchor=bottom-left
+width=1920
+height=60
+margin=0
+padding=0
+icons=0
+font=FiraCode Nerd Font Mono SemBd 10
+border-color=#f4005f
+default-timeout=3000
+group-by=category
+history=0
+
+[category=clock-large]
+anchor=top-center
+width=300
+height=300
+margin=10
+padding=2
+icons=0
+font=FiraCode Nerd Font Mono SemBd 10
+border-color=#F4005F
+border-size=10
+border-radius=2
+default-timeout=3000
+group-by=category
+
+[app-name="Signal"]
+border-color=#905CEB
+default-timeout=0
+anchor=bottom-center
+width=960
+height=1000
+margin=1
+padding=2
+icons=0
+font=FiraCode Nerd Font Mono SemBd 10
+group-by=category
+
+[category=signal]
+border-color=#905CEB
+default-timeout=0
+anchor=bottom-right
+width=500
+height=1000
+margin=1
+padding=0
+icons=0
+font=FiraCode Nerd Font Mono SemBd 9
+# group-by=category
+
+[category=kitty]
+anchor=bottom-center
+width=960
+height=200
+margin=1
+padding=2
+icons=0
+font=FiraCode Nerd Font Mono SemBd 9
+border-color=#CBFD65
+default-timeout=5000
+group-by=category
+
+[category=reload]
+anchor=bottom-right
+width=200
+height=200
+margin=1
+padding=2
+icons=0
+font=FiraCode Nerd Font Mono SemBd 10
+border-color=#B2F3AC
+default-timeout=3000
+group-by=category
+
+[category=buku]
+anchor=bottom-center
+width=960
+height=200
+margin=1
+padding=2
+icons=0
+font=FiraCode Nerd Font Mono SemBd 9
+border-color=#71DCE4
+default-timeout=5000
+group-by=category
+
+[category=snips]
+anchor=center
+width=500
+height=500
+margin=1
+padding=2
+icons=0
+font=FiraCode Nerd Font Mono SemBd 10
+border-color=#dcafe2
+default-timeout=1500
+group-by=category
+
+[category=y2]
+border-color=#BD8E7B
+default-timeout=2000
+anchor=center
+width=960
+height=1000
+margin=0
+padding=0
+icons=0
+font=FiraCode Nerd Font Mono SemBd 11
+# group-by=category
+#
+[category=mid]
+anchor=center
+width=500
+height=500
+margin=1
+padding=2
+icons=0
+font=FiraCode Nerd Font Mono SemBd 10
+border-color=#CBFD65
+default-timeout=1500
+group-by=category
+
+# top-small
+[category=top-mid-960x50]
+anchor=top-center
+width=960
+height=50
+margin=2
+padding=2
+icons=0
+font=FiraCode Nerd Font Mono SemBd 10
+border-color=#fbc740
+# #00f495
+default-timeout=1500
+group-by=category
+
+[category=emoji]
+anchor=bottom-center
+width=100
+height=50
+margin=250
+padding=2
+icons=0
+font=FiraCode Nerd Font Mono SemBd 10
+border-color=#40fbeb
+default-timeout=3000
+group-by=category
+
+[category=escape]
+anchor=bottom-center
+width=100
+height=50
+margin=250
+padding=2
+icons=0
+font=FiraCode Nerd Font Mono SemBd 10
+border-color=#fbc740
+default-timeout=500
+group-by=category
+
+[category=fkme]
+anchor=top-center
+width=150
+height=50
+margin=0
+padding=0
+icons=0
+font=FiraCode Nerd Font Mono SemBd 19
+border-color=#ff0000
+border-size=2
+border-radius=1
+default-timeout=999
+group-by=category
+
+[category=vol]
+anchor=top-center
+width=500
+height=500
+margin=1
+padding=2
+icons=0
+font=FiraCode Nerd Font Mono SemBd 10
+# border-color=#f9d726
+history=0
+# default-timeout=1000
+group-by=category
+# progress-color=over #f4005f
+progress-color=source #c49bf3
+text-color=#ffffff
+border-color=#020202
+
+[category=chromium]
+border-color=#fbc740
+default-timeout=3000
+anchor=bottom-right
+width=500
+height=1000
+margin=1
+padding=0
+icons=0
+font=FiraCode Nerd Font Mono SemBd 9
+group-by=category
+
+[category=regular]
+anchor=top-center
+width=200
+height=150
+margin=2
+padding=2
+icons=0
+font=FiraCode Nerd Font Mono SemBd 10
+border-color=#ec40fb
+# #00f495
+default-timeout=3000
+group-by=category
+
+[category=workspaces]
+anchor=top-center
+width=60
+height=60
+margin=10
+padding=0
+icons=0
+font=FiraCode Nerd Font Mono SemBd 11
+border-color=#FB4099
+border-size=2
+border-radius=5
+default-timeout=500
+#group-by=category
+#
+
+[category=clam]
+anchor=top-center
+width=200
+height=60
+margin=10
+padding=0
+icons=0
+font=FiraCode Nerd Font Mono SemBd 11
+border-color=#AD6119
+border-size=2
+border-radius=5
+default-timeout=2000
+#group-by=category

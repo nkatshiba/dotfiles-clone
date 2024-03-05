@@ -1,0 +1,7 @@
+abbr -a fc 'z /usr/share/fonts'
+abbr -a fcc 'fc-cache'
+abbr -a fclf 'fc-list : family | rg '
+abbr -a fcls 'fc-list : style | rg '
+abbr -a fclfn 'fc-list : family | rg Nerd '
+abbr -a fcls 'fc-list : style | rg Nerd '
+abbr -a fcp 'fontpreview'
