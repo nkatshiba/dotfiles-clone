@@ -1,18 +1,21 @@
-@define-color bg #10080a;
+@define-color bg #020202;
 @define-color fg #020202;
 @define-color pink #fb4099;
 @define-color red #f4005f;
-@define-color lightpink #ec40fb;
-@define-color lightorange #F38BA8;
+@define-color lightpink #c053ab;
+@define-color skin #F38BA8;
+@define-color lightorange #fa8419;
+@define-color magenta #ff26ef;
+
 
 @define-color yellow #fbc740;
+@define-color wallyellow #FDD527;
 @define-color teal #00f495;
-@define-color blue #4074fb;
-@define-color lightblue #00f4d6;
+@define-color blue #005ff4;
+@define-color lightblue #40e5fb;
 @define-color white #ffffff;
-@define-color lightgrey #f5e0dc;
-@define-color purple #9d65ff;
-@define-color bluellow #5e4c51;
+@define-color lightgrey #f5f4f5;
+@define-color purple #7c40fb;
+@define-color bluellow #4b132e;
+@define-color ox #731044;
 
-/* @define-color x; */
-/* %s///gc */

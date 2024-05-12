@@ -1,2 +1,2 @@
 # mail / email
-abbr -a mail '/home/tildavimer/src/scripts/wtype/email/email.fish'
+abbr -a mail '$HOME/src/scripts/wtype/email/email.fish'

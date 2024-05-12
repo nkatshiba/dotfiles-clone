@@ -4,7 +4,7 @@ abbr -a y 'yay'
 abbr -a yi "yay -Slq | fzf --preview 'yay -Si {}' --layout=reverse --bind 'enter:execute(yay -Si {} | less)'"
 abbr -a yr 'yay -Rs'
 # abbr -a yr "yay -Slq | fzf --preview 'yay -Si {}' --layout=reverse --bind 'enter:execute(yay -Rs {} | less)'"
-abbr -a ye "exp"
+abbr -a ye "expa"
 # expac
 # abbr -a exp "expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail --lines 10"
 abbr -a mirrorlist 'sudo reflector --country Sweden --latest 10 --save /etc/pacman.d/mirrorlist'

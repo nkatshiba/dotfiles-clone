@@ -4,7 +4,7 @@ function mlvs
 
     echo -e $NL
     echo -e $DIV
-    mullvad status -l
+    mullvad status
     echo -e $DIV
     echo -e $NL
 end

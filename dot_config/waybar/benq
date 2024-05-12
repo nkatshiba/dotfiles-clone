@@ -1,0 +1,27 @@
+{
+  // Modules left
+  "modules-left": [
+    "clock#time",
+    "memory",
+    "cpu",
+    "disk",
+    "pulseaudio#microphone",
+    "pulseaudio#audio"
+  ],
+
+  // Modules center
+  "modules-center": [
+    "hyprland/workspaces"
+   ],
+
+  // Modules right
+  "modules-right": [
+    "battery",
+    "backlight",
+    "network#wlo1",
+    "network#eno1",
+    "idle_inhibitor",
+    "custom/weather",
+    "tray"
+  ],
+}

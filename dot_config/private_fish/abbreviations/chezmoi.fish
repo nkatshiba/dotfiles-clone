@@ -6,7 +6,7 @@ abbr -a cm chezmoi
 abbr -a cma 'chezmoi add'
 abbr -a cmappv 'chezmoi apply -v'
 abbr -a cmapp 'chezmoi apply'
-abbr -a cmcd 'clear -x;z /home/tildavimer/.dotfiles;echo ""; git status -s && git log --oneline --graph --color=always -n 10'
+abbr -a cmcd 'clear -x;z $HOME/.dotfiles;echo ""; git status -s && git log --oneline --graph --color=always -n 10'
 abbr -a cmdii 'clear -x;chezmoi diff'
 abbr -a cmdi "clear -x;chezmoi diff | rg --context 3 --line-number 'diff --git a/'"
 abbr -a cmd 'clear -x;chezmoi diff | rg --line-number "diff --git a/"'

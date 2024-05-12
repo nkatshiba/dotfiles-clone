@@ -9,6 +9,6 @@ function night --wraps gammastep --description 'gammastep [TEMPERATURE]'
     killall gammastep
     gammastep -O $KELVIN &
     disown
-    echo "T is> $KELVIN"
+    echo "T: $KELVIN"
 
 end

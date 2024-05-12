@@ -6,10 +6,10 @@ function wf-recorder -w wf-recorder
 
         case geo geometry slurp rectangle g
             set GEOMETRY $(slurp)
-            command wf-recorder --audio="alsa_output.usb-BEHRINGER_UMC204HD_192k-00.Direct__hw_U192k__sink.monitor" -f "$FILE_NAME.mp4" --geometry="$GEOMETRY" $argv
+            command wf-recorder --audio="alsa_output.usb-BEHRINGER_UMC204HD_192k-00.Direct__hw_U192k__sink.monitor" -f "$FILE_NAME" --geometry="$GEOMETRY" $argv
 
         case '*'
-            command wf-recorder --audio="alsa_output.usb-BEHRINGER_UMC204HD_192k-00.Direct__hw_U192k__sink.monitor" -f "$FILE_NAME.mp4" $argv
+            command wf-recorder --audio="alsa_output.usb-BEHRINGER_UMC204HD_192k-00.Direct__hw_U192k__sink.monitor" -f "$FILE_NAME" $argv
     end
 
 

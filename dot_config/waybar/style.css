@@ -1,5 +1,25 @@
 @import "css/colors.css";
 
+/* @define-color bg #020202; */
+/* @define-color fg #020202; */
+/* @define-color pink #fb4099; */
+/* @define-color red #f4005f; */
+/* @define-color lightpink #c053ab; */
+/* @define-color skin #F38BA8; */
+/* @define-color lightorange #fa8419; */
+/* @define-color magenta #ec40fb; */
+/**/
+/**/
+/* @define-color yellow #fbc740; */
+/* @define-color teal #00f495; */
+/* @define-color blue #005ff4; */
+/* @define-color lightblue #40e5fb; */
+/* @define-color white #ffffff; */
+/* @define-color lightgrey #f5f4f5; */
+/* @define-color purple #7c40fb; */
+/* @define-color bluellow #4b132e; */
+/* @define-color ox #4b132e; */
+
 * {
   font-family: "FiraCode Nerd Font Mono SemBd", bold;
   font-size: 12px;
@@ -10,22 +30,22 @@ window#waybar {
 }
 
 #workspaces button {
-  background-color: @pink;
-  color: @fg;
+  color: @magenta;
   padding: 0px 0px;
+  margin-right: 1px;
   margin-top: 2px;
   margin-bottom: 2px;
-  border-radius: 3px;
+  /* border-radius: 2px; */
   transition-property: color;
-  transition-duration: 2s;
-  opacity: 0.8;
+  transition-duration: 1s;
+  opacity: 0.9;
 }
 
 #workspaces button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
-  background: @yellow;
-  border: @fg;
+  /* background: @yellow; */
+  /* border: @fg; */
   padding: 1px 1px 1px 1px;
   transition-property: background-color;
   transition-duration: 1s;
@@ -33,14 +53,15 @@ window#waybar {
 
 #workspaces button.focused,
 #workspaces button.active {
-  background-color: @teal;
+  color: @teal;
+  /* background-color: @teal; */
   transition-property: background-color;
   transition-duration: 0.2s;
   opacity: 1.0;
 }
 
 #workspaces button.urgent {
-  background-color: @pink;
+  background-color: @red;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -148,7 +169,7 @@ window#waybar {
 
 #tray {
   background-color: transparent;
-  opacity: 0.3;
+  opacity: 0.8;
 }
 #tray > .passive {
   -gtk-icon-effect: dim;
@@ -162,8 +183,8 @@ window#waybar {
 
 #cpu {
   color: @yellow;
-  opacity: 0.7;
-  padding-left: 90px;
+  opacity: 1;
+  padding-right: 5px;
 }
 
 #cpu:hover {
@@ -173,10 +194,9 @@ window#waybar {
 /* -------------------------------------------------------------------------------- */
 
 #disk {
-  color: @pink;
-  opacity: 0.7;
-  padding-left: 30px;
-  padding-right: 10px;
+  color: @blue;
+  opacity: 1;
+  padding-right: 5px;
 }
 
 #disk:hover {
@@ -187,8 +207,9 @@ window#waybar {
 
 #memory {
   color: @lightblue;
-  opacity: 0.7;
-  padding-left: 30px;
+  opacity: 1;
+  padding-right: 5px;
+  padding-left: 60px;
 }
 
 #memory:hover {
@@ -201,11 +222,11 @@ window#waybar {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
-  padding-right: 240px;
+  padding-right: 0px;
   border-radius: 0px;
   transition: none;
   color: @peach;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 #backlight:hover {
@@ -234,8 +255,8 @@ window#waybar {
 }
 
 #pulseaudio.audio.muted {
-  color: @red;
-  opacity: 0.7;
+  color: @magenta;
+  /* opacity: 0.7; */
 }
 
 #pulseaudio.audio.muted:hover {
@@ -243,9 +264,9 @@ window#waybar {
 }
 
 #pulseaudio.microphone {
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-right: 90px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 60px;
 
   background-color: @teal;
   color: @fg;
@@ -256,8 +277,9 @@ window#waybar {
 }
 
 #pulseaudio.microphone.source-muted {
-  background-color: @red;
-  opacity: 0.7;
+  background-color: @magenta;
+  color: @bg;
+  opacity: 1;
 }
 
 #pulseaudio.microphone.source-muted:hover {
@@ -269,9 +291,9 @@ window#waybar {
 #network,
 #network.ethernet,
 #network.wifi {
-  padding-left: 160px;
+  padding-right: 120px;
   color: @lightpink;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 #network:hover,
@@ -323,7 +345,7 @@ window#waybar {
 
 #bluetooth.on:hover,
 #bluetooth.connected:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 /* #bluetooth.discoverable {} */
@@ -333,11 +355,11 @@ window#waybar {
 /* -------------------------------------------------------------------------------- */
 
 #battery {
-  padding-right: 160px;
+  padding-left: 60px;
   transition: none;
 }
 #battery.full {
-  color: lightgrey;
+  color: @purple;
   opacity: 0.5;
 }
 
@@ -346,7 +368,7 @@ window#waybar {
 }
 
 #battery.warning {
-  color: lightgrey;
+  color: @purple;
   background-color: @bg;
 
 }
@@ -357,7 +379,7 @@ window#waybar {
 
 #battery.critical {
   /* background-color: @red; */
-  color: lightgrey;
+  color: @purple;
 }
 
 #battery.critical:hover {
@@ -366,8 +388,8 @@ window#waybar {
 
 #battery.charging,
 #battery.plugged {
-  color: lightgrey;
-  opacity: 0.5;
+  color: @purple;
+  opacity: 1;
 }
 
 #battery.charging:hover,
@@ -395,8 +417,17 @@ window#waybar {
 /* -------------------------------------------------------------------------------- */
 
 #clock {
+  color: @magenta;
+  /* color: @rosewater; */
+}
+
+#clock.time {
   color: @yellow;
-;
+  /* color: @rosewater; */
+}
+
+#clock.date {
+  color: @yellow;
   /* color: @rosewater; */
 }
 
@@ -407,47 +438,48 @@ window#waybar {
 /* -------------------------------------------------------------------------------- */
 
 #custom-vpn_check {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 5px;
   margin-right: 5px;
-  padding-left: 0px;
+  padding-left: 5px;
   padding-right: 5px;
-  border-radius: 0px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 3px;
   transition: none;
-
-  color: @teal;
-  opacity: 0.7;
+  background-color: @yellow;
+  color: @bg;
+  opacity: 0.8;
 }
 
 /* -------------------------------------------------------------------------------- */
 
 #idle_inhibitor {
-    color: @flamingo;
-    padding: 1px 8px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding-right: 30px;
-    border-radius: 5px;
+  padding-right: 160px;
+  padding-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 5px;
 }
 #idle_inhibitor.activated {
     /* background-color: @green; */
-  color: @lightpink;
-  opacity: 0.7;
+  color: @teal;
+  opacity: 1;
 ;
 }
 
 #idle_inhibitor.deactivated {
-    color: @lightorange;
-    opacity: 0.5;
+    color: @magenta;
+    opacity: 0.9;
 }
 /* -------------------------------------------------------------------------------- */
 #custom-weather {
   color: @purple;
-  opacity: 0.9;
-  padding-right: 30px;
+  opacity: 1;
+  padding-right: 60px;
 }
 
 /* -------------------------------------------------------------------------------- */

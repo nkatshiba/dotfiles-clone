@@ -1,2 +1,2 @@
 # speedtest
-abbr -a speed 'speedtest-rs'
+abbr -a speed 'speedtest-cloudflare && hyprctl dispatch focuswindow qutebrowser'

@@ -1,0 +1,52 @@
+function __git_branch_name
+  echo (command git symbolic-ref HEAD 2> /dev/null | sed -e 's|^refs/heads/||')
+end
+
+function __is_git_dirty
+  echo (command git status -s --ignore-submodules=dirty 2> /dev/null)
+end
+
+function prompt_pwd_full
+  set -q fish_prompt_pwd_dir_length; or set -l fish_prompt_pwd_dir_length 1
+
+  if [ $fish_prompt_pwd_dir_length -eq 0 ]
+    set -l fish_prompt_pwd_dir_length 99999
+  end
+
+  set -l realhome ~
+  echo $PWD | sed -e "s|^$realhome|~|" -e 's-\([^/.]{'"$fish_prompt_pwd_dir_length"'}\)[^/]*/-\1/-g'
+end
+
+function fish_prompt
+
+  set -l cyan (set_color cyan)
+  set -l brcyan (set_color brcyan)
+  set -l brgreen (set_color brgreen)
+  set -l brblack (set_color brblack)
+  set -l bryellow (set_color bryellow)
+  set -l normal (set_color normal)
+
+  # set -l col_2 (set_color 8b7c8f)
+  # set -l col_4 (set_color b78bff)
+
+  # output
+  # set -l ARROW_COL (set_color d7baff)
+  set -l ARROW_COL (set_color ec40fb)
+  set -l ARROW_SYM "λ"
+  set -l ARROW_STR $ARROW_COL$ARROW_SYM
+  # set -l PWD_COL (set_color 8a66c9)
+  set -l PWD_COL (set_color 775f6a)
+  set -l PWD_STR $PWD_COL(prompt_pwd_full)
+
+  set -l WHOAMI_COL (set_color ec40fb)
+  set -l WHOAMI_STR $WHOAMI_COL(whoami)
+  # set -l HOSTNAME_COL (set_color 8a66c9)
+  # set -l HOSTNAME_STR $HOSTNAME_COL(hostnamectl hostname)
+  # set -l WHO "$WHOAMI_STR\@$HOSTNAME_STR"
+
+
+  set git_info "$_hydro_color_git$$_hydro_git$hydro_color_normal"
+
+  # echo -n -s "$(whoami)@$(hostnamectl hostname) "$PWD_STR $normal ' ' $ARROW_STR ' '
+  echo -n -s "$WHOAMI_STR "$PWD_STR $normal ' ' $ARROW_STR ' '
+end

@@ -1,0 +1,18 @@
+{
+  // Modules left
+  "modules-left": [
+    "clock#time",
+    "pulseaudio#microphone",
+    "pulseaudio#audio"
+  ],
+
+  // Modules center
+  "modules-center": [
+    "hyprland/workspaces"
+   ],
+
+  // Modules right
+  "modules-right": [
+    "clock#date",
+  ],
+}

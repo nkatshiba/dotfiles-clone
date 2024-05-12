@@ -1,7 +1,7 @@
 # hyprctl
 ## general
 abbr -a h hyprctl
-abbr -a hm 'hyprctl monitors'
+abbr -a hm 'hyprctl monitors | rg --context 2 Monitor'
 # abbr -a hw 'hyprctl workspaces'
 abbr -a hwiki 'hyprwiki'
 abbr -a hw 'hyprctl workspaces'
@@ -27,4 +27,6 @@ abbr -a hdl 'hyprctl dispatch layoutmsg'
 
 abbr -a back "hyprctl dispatch exec 'sleep 2 && wtype -k backslash' && exit"
 abbr -a pin '$HOME/src/scripts/alone/pin.fish;exit'
-abbr -a haw 'sleep 2 && hyprctl activewindow && exit'
+abbr -a haw 'sleep 2 && hyprctl activewindow'
+abbr -a hyprpaper 'killall hyprpaper && hyprctl dispatch exec hyprpaper -- -n'
+abbr -a hyprp 'killall hyprpaper && hyprctl dispatch exec hyprpaper -- -n'

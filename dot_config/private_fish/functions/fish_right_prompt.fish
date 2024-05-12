@@ -11,9 +11,9 @@
 function fish_right_prompt --description Hydro
 
     set -l normal (set_color normal)
-    set -l col_PARA (set_color 9D65FF)
-    set -l col_TEXT (set_color 87E289)
-    set -l col_DIRTY (set_color f4005d)
+    set -l col_PARA (set_color 7c40fb)
+    set -l col_TEXT (set_color fbc740)
+    set -l col_DIRTY (set_color fb4099)
 
 
     function __git_branch_name

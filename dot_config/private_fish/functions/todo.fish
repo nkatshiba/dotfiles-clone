@@ -1,4 +1,3 @@
-
 function todo
     set -l TODO_CONFIG_FILE $HOME/.config/fish/functions/todo.fish
     set -l TODO_FILE ~/.TODO_LIST
@@ -15,6 +14,14 @@ function todo
             echo -e "            $INPUT_CAP" >> $TODO_FILE
             # echo "- $(capitalize $argv[2..-1])" >> $TODO_FILE
             echo "Added task: "$argv[2..-1]
+
+        case edit e
+            vi $TODO_FILE
+            echo "To-do list updated."
+            # Use the spaced text file to create the image
+            convert -size 1920x1080 xc:#020202 -font FiraCode-Nerd-Font-Mono-SemBd -pointsize $FONT_SIZE -fill "#ec40fb" -gravity northwest -annotate +50+50 "@$SPACED_TODO_FILE" $IMAGE_FILE
+            # Set wallpaper
+            swww img $IMAGE_FILE --resize fit
 
         case list l
             if test -e $TODO_FILE
@@ -42,12 +49,11 @@ function todo
             cme $TODO_CONFIG_FILE
 
         case '*'
-            vi $TODO_FILE
-            echo "To-do list updated."
-            # Use the spaced text file to create the image
-            convert -size 1920x1080 xc:#020202 -font FiraCode-Nerd-Font-Mono-SemBd -pointsize $FONT_SIZE -fill "#fbc740" -gravity northwest -annotate +50+50 "@$SPACED_TODO_FILE" $IMAGE_FILE
-            # Set wallpaper
-            swww img $IMAGE_FILE --resize fit
+            set INPUT (input "task..")
+            set INPUT_CAP "- $(capitalize $INPUT)"
+            echo -e "            $INPUT_CAP" >> $TODO_FILE
+            # echo "- $(capitalize $argv[2..-1])" >> $TODO_FILE
+            echo "Added task: "$argv[2..-1]
     end
 
     # Update the image if the to-do file exists and has tasks
@@ -64,7 +70,7 @@ function todo
         end
 
         # Use the spaced text file to create the image
-        convert -size 1920x1080 xc:#020202 -font FiraCode-Nerd-Font-Mono-SemBd -pointsize $FONT_SIZE -fill "#fbc740" -gravity northwest -annotate +50+50 "@$SPACED_TODO_FILE" $IMAGE_FILE  # 
+        convert -size 1920x1080 xc:#020202 -font FiraCode-Nerd-Font-Mono-SemBd -pointsize $FONT_SIZE -fill "#ec40fb" -gravity northwest -annotate +50+50 "@$SPACED_TODO_FILE" $IMAGE_FILE  # 
         # Set wallpaper
         swww img $IMAGE_FILE --resize fit
     end

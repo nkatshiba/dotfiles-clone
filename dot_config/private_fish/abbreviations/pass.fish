@@ -4,7 +4,7 @@ abbr -a passm pass mv
 abbr -a passr pass rm
 abbr -a passf pass find
 abbr -a passc pass cp
-abbr -a passi pass insert
+abbr -a passi pass insert -m
 abbr -a passg pass git
 abbr -a passh pass help
 abbr -a pac 'pass -c'
@@ -20,3 +20,4 @@ abbr -a pazpi 'pass insert zZz/pwd/'
 abbr -a pazpw 'wtype (pass zZz/pwd/'
 
 
+abbr -a pi 'pass insert -m' 

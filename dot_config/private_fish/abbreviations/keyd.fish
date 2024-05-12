@@ -1,5 +1,5 @@
 # keyd
-abbr -a keye 'sudo -E nvim /etc/keyd/default.conf'
+abbr -a keye 'sudo -E nvim /etc/keyd/default.conf && sudo keyd reload'
 abbr -a key 'sudo keyd'
 abbr -a keyr 'sudo keyd reload'
 abbr -a keym 'sudo keyd monitor'

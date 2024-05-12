@@ -7,14 +7,7 @@ function gcm --wraps 'git cz' --description 'alias gcm=git cz && gitlint'
     git status --short -uno
     echo ""
     div_with_desc "*" "[GCM]" 87E289
-    # cc-cli
-    $HOME/src/scripts/posix/git-scripts/commit-simple.sh
-    # gitlint
-
-    # commits
-    # commited
-    # cc-cli
-    # git cz
-    # mji
+    set MESSAGE (input "commit message")
+    git commit -m "$MESSAGE"
 
 end

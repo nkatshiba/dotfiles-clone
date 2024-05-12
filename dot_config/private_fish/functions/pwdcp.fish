@@ -1,6 +1,6 @@
 function pwdcp
 
-    set WHEREAMI $(string replace -a "/home/tildavimer" '$HOME' "$PWD")
+    set WHEREAMI $(string replace -a "/home/$(whoami)" '$HOME' "$PWD")
 
     if test "$WHEREAMI" = '$HOME'
         set WHEREAMI $WHEREAMI"/"

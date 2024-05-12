@@ -271,7 +271,7 @@ vim.api.nvim_set_keymap('n', '<leader>pyd', ':call system("wl-copy -n", expand("
 -- Insert numbers + dot pre all lines
 vim.api.nvim_set_keymap("", "<leader>pil", ":%s/^/\\=printf('%d. ', line('.'))/<CR>", {})
 -- Run code
-vim.api.nvim_set_keymap('n', '<leader>porh', ':!poetry run python %<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>porh', ':!pdm run %<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>prub', ':!cargo build<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>prum', ':!cargo run<CR>', {noremap = true, silent = true})
 
@@ -279,11 +279,12 @@ vim.keymap.set('n', '<leader><leader>', ':!', {noremap = true, silent = true})
 
 
 -- Porm
-vim.api.nvim_set_keymap('n', '<leader>porm', '<cmd>lua require("kitty-runner").launch("poetry run python " .. vim.fn.expand("%"), hsplit)<CR>', {})
+-- vim.api.nvim_set_keymap('n', '<leader>porm', '<cmd>lua require("kitty-runner").launch("poetry run python " .. vim.fn.expand("%"), hsplit)<CR>', {})
+vim.api.nvim_set_keymap('n', '<leader>porm', '<cmd>lua require("kitty-runner").launch("pdm run " .. vim.fn.expand("%"), hsplit)<CR>', {})
 -- vim.api.nvim_set_keymap('n', '<leader>porr', '<cmd>lua require("kitty-runner").launch("poetry run python main.py", hsplit)<CR>', {})
 -- vim.api.nvim_set_keymap('n', '<leader>porr', '<cmd>lua require("kitty-runner").launch("./" .. vim.fn.expand("%"), hsplit)<CR>', {})
 vim.api.nvim_set_keymap('n', '<leader>porr', ':!./%<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<leader>pov', ':VimtexCompile<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>poc', ':VimtexCompile<CR>', {noremap = true, silent = true})
 
 vim.api.nvim_set_keymap('n', '<leader>pora', '<cmd>lua require("kitty-runner").launch("poetry run python app.py", hsplit)<CR>', {})
 -- vim.api.nvim_set_keymap('n', '<leader>PP', '<cmd>lua require("kitty-runner").launch("poetry run python " .. vim.fn.expand("%"), hsplit)<CR>', {})
@@ -298,6 +299,9 @@ local dir = vim.fn.expand('%:p:h')
 vim.api.nvim_set_keymap('n', '<leader>T', ":execute '!hyprctl dispatch exec -- kitty --working-directory " .. dir .. "'<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>porA', ':!kitty poetry run python app.py &;sleep 3 && qutebrowser http://127.0.0.1:5000<CR>', {noremap = true, silent = true})
 -- vim.api.nvim_set_keymap('n', '<leader>porA', ":execute '!!kitty poetry run python app.py &'<CR>", {noremap = true, silent = true})
+
+-- Select all and yank
+vim.api.nvim_set_keymap('n', '<leader>A', ':%y+<CR>', {noremap = true, silent = true})
 
 
 -- Color Highlighters
@@ -427,9 +431,9 @@ require('nvim-treesitter.configs').setup {
       swap_next = {
         ['<leader>a'] = '@parameter.inner',
       },
-      swap_previous = {
-        ['<leader>A'] = '@parameter.inner',
-      },
+      -- swap_previous = {
+      --   ['<leader>A'] = '@parameter.inner',
+      -- },
     },
   },
 }

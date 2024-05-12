@@ -1,0 +1,313 @@
+{
+  "custom/launcher": {
+    "format": "󱗼",
+    "on-click": "~/.config/tofi/scripts/drun.sh -t catppuccin_mocha",
+    "on-click-right": "~/.config/tofi/scripts/drun.sh -t catppuccin_mocha",
+    "tooltip": false
+  },
+
+  "hyprland/workspaces": {
+    "active-only": "false",
+    "all-outputs": "false",
+    "disable-markup" : false,
+    "sort-by-name" : false,
+    "sort-by-number" : true,
+    "sort-by-coordinates" : false,
+    "on-click": "activate",
+    "format": "{icon}",
+
+    "format-icons": {
+        "1": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>1</span>",
+        "2": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>2</span>",
+        "3": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>3</span>",
+        "4": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>4</span>",
+        "5": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>5</span>",
+        "6": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>6</span>",
+        "7": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>7</span>",
+        "8": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>8</span>",
+        "9": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>9</span>",
+        "10": "<span font_desc='FiraCode Nerd Font Mono Bold 14'>10</span>",
+
+        "11": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>1</span>",
+        "12": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>2</span>",
+        "13": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>3</span>",
+        "14": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>4</span>",
+        "15": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>5</span>",
+        "16": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>6</span>",
+        "17": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>7</span>",
+        "18": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>8</span>",
+        "19": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>9</span>",
+
+        "21": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>1</span>",
+        "22": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>2</span>",
+        "23": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>3</span>",
+        "24": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>4</span>",
+        "25": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>5</span>",
+        "26": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>6</span>",
+        "27": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>7</span>",
+        "28": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>8</span>",
+        "29": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>9</span>",
+
+        // "21": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>1</span>",
+        // "22": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>2</span>",
+        // "23": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>3</span>",
+        // "24": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>4</span>",
+        // "25": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>5</span>",
+        // "26": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>6</span>",
+        // "27": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>7</span>",
+        // "28": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>8</span>",
+        // "29": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>9</span>",
+        // "30": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>0</span>",
+
+        // custom workspaces //
+        "a": "<span font_desc='FiraCode Nerd Font Mono Bold 14'>𞊭</span>",
+        "s": "<span font_desc='FiraCode Nerd Font Mono 14'>𝝨</span>",
+        "x": "<span font_desc='FiraCode Nerd Font Mono Sembd 14'>Χ</span>",
+        "y": "<span font_desc='FiraCode Nerd Font Mono Bold 14'>ᛸ</span>",
+        "tidal": "<span font_desc='FiraCode Nerd Font Mono Bold 17'></span>",
+        "disc-prot": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>.dp</span>",
+        "typeracer": "<span font_desc='FiraCode Nerd Font Mono Bold 14'>🏎</span>",
+        "freetube": "<span font_desc='FiraCode Nerd Font Mono SemBd 18'></span>",
+        "bitwig": "<span font_desc='FiraCode Nerd Font Mono SemBd 14'>β</span>"
+
+    }
+  },
+
+  "hyprland/submap": {
+    "format": " {} ",
+    "tooltip": false
+ },
+
+  "hyprland/window": {
+    "format": " <span font_desc='CaskaydiaCove Nerd Font Mono 6'>{:.40}</span> ",
+    "separate-outputs": false
+  },
+
+  "tray": {
+    // "icon-size": 21,
+    "spacing": 10
+  },
+
+  "mpris": {
+    //"dynamic-order": ["title", "artist", "position", "length"],
+    "dynamic-order": ["title"],
+    "format": "{player_icon} <i>{dynamic}</i>",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "player-icons": {
+      "default": "󰐊",
+      "mpv": "🎵"
+    },
+    "status-icons": {
+      "paused": "⏸"
+    },
+    // "ignored-players": ["firefox"]
+  },
+
+  "cpu": {
+    "interval": 1,
+    "format": " {usage}%",
+    "on-click": "",
+    "tooltip": false,
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+  },
+
+  "memory": {
+    "format": "󰤇 ({percentage}%)",
+    "on-click": "",
+    "tooltip": false
+  },
+
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": ["", "", "", "", "", "", ""],
+    "on-scroll-up": "brightnessctl set +5% && ~/.config/dunst/scripts/show_brightness.sh",
+    "on-scroll-down": "brightnessctl set 5%- && ~/.config/dunst/scripts/show_brightness.sh",
+    "on-click": "brightnessctl -c backlight set 80%",
+    "on-click-right": "brightnessctl -c backlight set 5%",
+    "smooth-scrolling-threshold": 1,
+  },
+
+  // "pulseaudio": {
+  //   "format": "{icon} {volume}% {format_source}",
+  //   "format-bluetooth": "󰂯 {icon} {volume}% {format_source}",
+  //   "format-bluetooth-muted": "󰂯 󰖁 {volume}% {format_source}",
+  //   "format-muted": "󰖁 {volume}% {format_source}",
+  //   "format-source": "󰍬 {volume}%",
+  //   "format-source-muted": "󰍭 {volume}%",
+  //   "format-icons": {
+  //     "headphone": "󰋋",
+  //     "hands-free": "󰋋",
+  //     "headset": "󰋋",
+  //     "phone": "",
+  //     "portable": "",
+  //     "car": "",
+  //     "default": ["󰕿", "󰖀", "󰕾"]
+  //   },
+  //   "on-click": "",
+  //   "tooltip": false
+  // },
+  
+  "pulseaudio#audio": {
+    //"format": "{icon} {volume}%",
+    "format": "{volume}%",
+    "format-bluetooth": "󰂯 {icon} {volume}%",
+    "format-bluetooth-muted": "󰂯 󰖁 {volume}%",
+    "format-muted": "{volume}%",
+    //"format-muted": "󰀞󰪑󰛅󱡟󱃓󱣼󰩅󱜢󱑫󱫮󱐴󰻹󰀝 {volume}%",
+    "format-icons": {
+      "headphone": "󰋋",
+      "hands-free": "󰋋",
+      "headset": "󰋋",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", "", ""]
+    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle && ~/.config/dunst/scripts/show_mute.sh",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1% && ~/.config/dunst/scripts/show_volume.sh",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1% && ~/.config/dunst/scripts/show_volume.sh",
+    "tooltip": true,
+    "tooltip-format": "{icon} {desc}"
+  },
+
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    //"format-source": " {volume}%",
+    //"format-source-muted": " {volume}%",
+    "format-source": "",
+    "format-source-muted": "",
+    "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle && ~/.config/dunst/scripts/show_mute_microphone.sh",
+    "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1% && ~/.config/dunst/scripts/show_volume_microphone.sh",
+    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1% && ~/.config/dunst/scripts/show_volume_microphone.sh",
+    "max-volume": 100,
+    "tooltip": false
+  },
+
+  // "network": {
+  //   "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+  //   "format-wifi": "{icon} {ipaddr}",
+  //   "format-ethernet": "󰈀",
+  //   "format-disconnected": "󱞐 Disconnected",
+  //   "format-alt": "{icon} {essid} | 󰢮 {ifname} | 󰩟 {ipaddr}/{cidr} | 󰞒 {bandwidthDownBytes} | 󰞕 {bandwidthUpBytes}",
+  //   "tooltip": false
+  // },
+  "network#wlo1": {
+    "interval": 1,
+    "interface": "wlan0",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰖩"],
+    "format-wifi": "{icon} {signalStrength}%",
+    // "format-disconnected": "󰤮",
+    "format-disconnected": "",
+    // "format-alt": "{icon} {essid} | 󱑽 {signalStrength}% {signaldBm} dBm {frequency} MHz",
+    "on-click": "wezterm -e 'nmtui'",
+    "tooltip": true,
+    "tooltip-format": "󰢮 {ifname}\n󰩟 {ipaddr}/{cidr}\n{icon} {essid}\n󱑽 {signalStrength}% {signaldBm} dBm {frequency} MHz\n󰞒 {bandwidthDownBytes}\n󰞕 {bandwidthUpBytes}"
+  },
+  "network#eno1": {
+    "interval": 1,
+    "interface": "eno1",
+    "format-icons": ["󰈀"],
+    "format-ethernet": "{icon}",
+    // "format-disconnected": "{icon}",
+    "format-disconnected": "",
+    // "format-alt": "{icon} | 󰢮 {ifname} | 󰩟 {ipaddr}/{cidr}",
+    "on-click": "",
+    "tooltip": true,
+    "tooltip-format": "󰢮 {ifname}\n󰩟 {ipaddr}/{cidr}\n󰞒 {bandwidthDownBytes}\n󰞕 {bandwidthUpBytes}"
+  },
+  "bluetooth": {
+    "format-disabled": "󰂯 {status}",
+    "format-off": "",
+    "format-on": "󰂯 {status}",
+    "format-connected": "󰂯 {device_alias}",
+    "format-connected-battery": "󰂯 {device_alias} {device_battery_percentage}%",
+    "on-click": "",
+    "tooltip": false
+  },
+  "battery": {
+    "states": {
+      "good": 60,
+      "warning": 30,
+      "critical": 15
+    },
+    "design-capacity": false,
+    "interval": 15,
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": "󱘖 {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "on-click": "",
+    "format-time": "{H}h {M}min",
+    "tooltip": true
+  },
+  "clock": {
+    "interval": 1,
+    "format": "{:%H:%M:%S}",
+    //"format": "{:%d/%m | %H:%M}",
+    //"format": "󰥔 {:%H:%M}",
+    //"format": "󰥔 {:%I:%M %p}",
+    // "format-alt": "{:󰣆 %A, %B %d | 󰥔 %I:%M:%S %p}",
+    "on-click": "",
+    "tooltip": true,
+    "tooltip-format": "{:󰣆 %A, %B %d, %Y | 󰥔 %H:%M:%S %p}"
+  },
+  "clock#clock2": {
+    "interval": 1,
+    "format": "{:%H:%M:%S}",
+    "on-click": "",
+    "tooltip": true,
+    "tooltip-format": "{:󰣆 %A, %B %d, %Y | 󰥔 %H:%M:%S %p}"
+  },
+  "clock#time": {
+    "interval": 1,
+    "format": "{:%H:%M:%S}",
+    "on-click": "",
+    "tooltip": true,
+    "tooltip-format": "{:󰣆 %A, %B %d, %Y | 󰥔 %H:%M:%S %p}"
+  },
+
+  "clock#date": {
+    "interval": 1,
+    "format": "{:%d/%m/%Y}",
+    "on-click": "",
+    "tooltip": true,
+    "tooltip-format": "{:󰣆 %A, %B %d, %Y | 󰥔 %H:%M:%S %p}"
+  },
+  "custom/powermenu": {
+    "format": "󰤆",
+    "on-click": "~/.config/tofi/scripts/powermenu.sh -t catppuccin_mocha",
+    "on-click-right": "~/.config/tofi/scripts/powermenu.sh -t catppuccin_mocha",
+    "tooltip": false
+  },
+
+  "disk": {
+    "interval": 30,
+    "format": "󱔼 {free}",
+  },
+
+  "custom/weather": {
+    "tooltip": true,
+    "format": "{}",
+    "interval": 1800,
+    "exec": "~/.config/waybar/scripts/wttr.py",
+    "return-type": "json",
+  },
+
+  "custom/vpn_check":{
+    "format":" {} ",
+    "exec": "~/.config/waybar/scripts/vpnCheck",
+    "interval": 10,
+    "on-click": "mullvad-vpn",
+  },
+
+  "idle_inhibitor": {
+    "format": "{icon} IDL3 {icon}",
+    "start-activated": true,
+    "format-icons": {
+        //"activated": "󰒳",
+        "activated": "<span font_desc='CaskaydiaCove Nerd Font Mono 13'>󰒳</span>",
+        "deactivated": "󰒲"
+    }
+  },
+}

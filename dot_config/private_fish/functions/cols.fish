@@ -1,6 +1,9 @@
 function cols
 
-    set COLS_LIST "ox: #4b132e" "lightpink: #c053ab" "yellow: #fbc740" "pink: #fb4099" "red: #f4005f" "teal: #00f495" "purple: #7c40fb" "blue: #005ff4" "orange: #fa8419" "magenta: #ec40fb" "turquoise: #40e5fb"
+    set COLS_LIST "ox: #4b132e" "lightpink: #c053ab" "whitepink: #fec6e0" "yellow: #fbc740" "pink: #fb4099" "red: #f4005f" "teal: #00f495" "purple: #7c40fb" "blue: #005ff4" "orange: #fa8419" "magenta: #ec40fb" "turquoise: #40e5fb" "darkgrey: #775f6a"
+
+
+
 
     set COLOR_FULL (for COL in $COLS_LIST; echo (string split ' ' $COL); end | fzf)
     set COLOR_NAME (string split ' ' $COLOR_FULL)[1]
@@ -31,6 +34,10 @@ function cols
             set COLOR "#40e5fb"
         case ox blood
             set COLOR "#4b132e"
+        case wp whitepink
+            set COLOR "#fec6e0"
+        case dg darkgrey
+            set COLOR "#775f6a"
 
 
     end

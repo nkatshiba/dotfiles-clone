@@ -9,6 +9,7 @@ abbr -a wlc --position anywhere '| wl-copy && wl-paste -n'
 abbr -a cpmain 'bat main.py | wl-copy -n'
 abbr -a wlpg 'wl-paste | glow'
 abbr -a wlpgv 'wl-paste | glow | vi -'
+abbr -a wlpp 'wl-paste > '
 
 # copy snips
 abbr -a chalm 'echo ybring@chalmers.se | wl-copy -n'

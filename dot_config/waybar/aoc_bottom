@@ -1,0 +1,23 @@
+{
+  // Modules left
+  "modules-left": [
+    "tray",
+    "hyprland/submap",
+    "battery",
+    "network#wlo1",
+    "network#eno1"
+
+  ],
+
+  // Modules center
+  "modules-center": [
+    "custom/vpn_check"
+   ],
+
+  // Modules right
+  "modules-right": [
+    "memory",
+    "cpu",
+    "disk"
+  ],
+}

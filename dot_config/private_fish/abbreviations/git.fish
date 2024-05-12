@@ -18,7 +18,9 @@ abbr -a gcma 'git commit --amend -m' # Rename last commit
 abbr -a grmd 'git rm $(git ls-files --deleted)' # Remove deleted files from both index and working dir
 abbr -a gl 'git log --oneline --graph'
 abbr -a gla 'git log --oneline --all'
-abbr -a gc 'git checkout -b'
+abbr -a gch 'git checkout'
+abbr -a gchb 'git checkout -b'
+abbr -a gchm 'git checkout main'
 abbr -a grc 'git reset --soft HEAD~1' # Undo last commit
 abbr -a grf 'git-reset-file' # Undo modifications to file
 abbr -a gr 'git restore'

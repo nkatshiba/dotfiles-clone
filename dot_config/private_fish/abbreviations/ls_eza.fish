@@ -12,5 +12,8 @@ abbr -a ls3 'eza -T -L3'
 abbr -a ls4 'eza -T -L4'
 abbr -a ls5 'eza -T -L5'
 abbr -a lsfile 'eza -f'
+abbr -a cl 'clear && eza'
 abbr -a lsdir 'eza -D'
+abbr -a lsml 'eza --classify --sort modified -1 -l'
+abbr -a lslm 'eza --classify --sort modified -1 -l'
 

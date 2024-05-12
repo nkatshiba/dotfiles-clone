@@ -1,33 +1,9 @@
 ///////////////////////////////////// BENQ ///////////////////////////////////////////
 [{
 
-
+  // *** BENQ ***
   "layer": "top",
   "output": "HDMI-A-1",
-  // "output": "eDP-1",
-  "position": "bottom",
-  "margin-top": 0,
-  "margin-bottom": 0,
-  "margin-left": 0,
-  "margin-right": 0,
-  "spacing": 0,
-  "fixed-center": true,
-  "gtk-layer-shell": true,
-
-	"include": [
-		"~/.config/waybar/modules.json",
-		"~/.config/waybar/BENQ.json",
-	],
-
-},
-
-///////////////////////////////////// / BENQ ///////////////////////////////////////////
-
-///////////////////////////////////// AOC ///////////////////////////////////////////
-{
-
-  "layer": "top",
-  "output": "DP-2",
   // "output": "eDP-1",
   "position": "top",
   "margin-top": 0,
@@ -38,17 +14,65 @@
   "fixed-center": true,
   "gtk-layer-shell": true,
 
+	"include": [
+		"~/.config/waybar/modules",
+		"~/.config/waybar/benq",
+	],
+
+},
+
+///////////////////////////////////// / BENQ ///////////////////////////////////////////
+
+///////////////////////////////////// AOC TOP ///////////////////////////////////////////
+{
+
+  // *** AOC ***
+  "layer": "top",
+  "output": "DP-2",
+  "position": "top",
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "spacing": 0,
+  "fixed-center": true,
+  "gtk-layer-shell": true,
+
     "include": [
-    "~/.config/waybar/modules.json",
-    "~/.config/waybar/AOC_top.json",
+    "~/.config/waybar/modules",
+    "~/.config/waybar/aoc_top",
     ],
 
 },
-///////////////////////////////////// / AOC ///////////////////////////////////////////
+/////////////////////////////////////// / AOC TOP ///////////////////////////////////////////
 
-///////////////////////////////////// LAP /////////////////////////////////////////
+///////////////////////////////////// AOC BOTTOM ///////////////////////////////////////////
 {
 
+  // *** AOC ***
+  "layer": "top",
+  "output": "DP-2",
+  "position": "bottom",
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "spacing": 0,
+  "fixed-center": true,
+  "gtk-layer-shell": true,
+
+    "include": [
+    "~/.config/waybar/modules",
+    "~/.config/waybar/aoc_bottom",
+    ],
+
+},
+/////////////////////////////////////// / AOC BOTTOM ///////////////////////////////////////////
+//
+/////////////////////////////////////// LAP /////////////////////////////////////////
+{
+
+  // *** LAP ***
   "layer": "top",
   "output": "eDP-1",
   "position": "top",
@@ -61,8 +85,8 @@
   "gtk-layer-shell": true,
 
     "include": [
-    "~/.config/waybar/modules.json",
-    "~/.config/waybar/LAP.json",
+    "~/.config/waybar/modules",
+    "~/.config/waybar/laptop",
     ],
 
 }

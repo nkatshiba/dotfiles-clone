@@ -28,14 +28,10 @@ function keebak
     # newline
     new_line
 
-    set ASK_BAK (gum confirm "Perfom bak?" --default=true --affirmative "YES" --negative "NO" --prompt.bold --selected.bold --unselected.faint --prompt.background="#020202" --prompt.foreground="#f9d726" --prompt.border-background="#ffffff" --selected.background="#f4005f" --prompt.align="center" --prompt.margin="3 0 0 5" --selected.margin="3 0 0 5" --unselected.margin="3 0 0 6" && echo "YES" || echo "NO")
 
-    switch $ASK_BAK
-        case YES
-            7z a $MOUNT_DIR/$SD_CARD/$KEE_TARGET_DIR/keebak_$DATE.7z $HOME/.kee/keexc.kdbx
-        case NO
-            echo 2
-    end
 
+    7z a $MOUNT_DIR/$SD_CARD/$KEE_TARGET_DIR/keebak_$DATE.7z $HOME/.kee/keexc.kdbx
+
+    ls -l
     
 end

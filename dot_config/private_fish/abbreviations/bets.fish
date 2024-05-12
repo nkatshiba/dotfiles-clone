@@ -1,2 +1,3 @@
 # bets
-abbr -a beta '$HOME/src/scripts/app-specific/nb/bets/add_bet.fish'
+abbr -a bets '$HOME/nts/bets'
+abbr -a exp 'hyprctl dispatch exec floorp -- --new-window "https://www.expekt.se/"'
